@@ -22,3 +22,12 @@ test('check navigation menu is visible', async ({ page }) => {
   // Check if the main navigation bar is visible
   await expect(page.locator('nav')).toBeVisible();
 });
+test('docs link redirects correctly', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+
+  // Click on the Docs link in the top menu
+  await page.getByRole('link', { name: 'Docs' }).click();
+
+  // Verify the URL contains 'docs'
+  await expect(page).toHaveURL(/.*docs/);
+});
