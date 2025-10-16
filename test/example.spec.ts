@@ -16,3 +16,9 @@ test('get started link', async ({ page }) => {
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
+test('check navigation menu is visible', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+
+  // Check if the main navigation bar is visible
+  await expect(page.locator('nav')).toBeVisible();
+});
