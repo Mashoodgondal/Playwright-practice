@@ -35,7 +35,6 @@ test('docs link redirects correctly', async ({ page }) => {
 
 
 
-
 // test('docs link redirects correctly', async ({ page }) => {
 //   await page.goto('https://playwright.dev/');
 
