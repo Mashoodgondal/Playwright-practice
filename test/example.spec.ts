@@ -35,24 +35,18 @@ test('docs link redirects correctly', async ({ page }) => {
 
 
 
-// test('docs link redirects correctly', async ({ page }) => {
-//   await page.goto('https://playwright.dev/');
 
-//   // Click on the Docs link in the top menu
-//   await page.getByRole('link', { name: 'Docs' }).click();
 
-//   // Verify the URL contains 'docs'
-//   await expect(page).toHaveURL(/.*docs/);
-// });
-// test('docs link redirects correctly', async ({ page }) => {
-//   await page.goto('https://playwright.dev/');
 
-//   // Click on the Docs link in the top menu
-//   await page.getByRole('link', { name: 'Docs' }).click();
 
-//   // Verify the URL contains 'docs'
-//   await expect(page).toHaveURL(/.*docs/);
-// });
+
+
+
+
+
+
+
+
 // test('docs link redirects correctly', async ({ page }) => {
 //   await page.goto('https://playwright.dev/');
 
