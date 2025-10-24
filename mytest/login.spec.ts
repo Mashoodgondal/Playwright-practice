@@ -60,5 +60,5 @@ test('form check', async () => {
     await page.goto('http://127.0.0.1:5500/index.html')
     const heading: Locator = page.locator('#form-heading')
     await expect(heading).toHaveText('User sign-up form')
-    const subheading: Locator = page.locator()
+
 })
