@@ -54,48 +54,6 @@ test('landing page test', async () => {
 
     // await browser.close();
 
-
-
-    // const username = page.locator('#username');
-    // const password = page.locator('#password');
-    // const loginButton = page.locator('#submit');
-
-    // await username.fill('student');
-    // await password.fill('Password123');
-    // await loginButton.click();
-
-    // const title = await page.title();
-    // await page.screenshot({ path: 'loginpage.png' });
-
-    // expect(title).toBe('Logged In Successfully | Practice Test Automation');
-
-    // await browser.close();
-
-    // const username = page.locator('#username');
-    // const password = page.locator('#password');
-    // const loginButton = page.locator('#submit');
-
-    // await username.fill('student');
-    // await password.fill('Password123');
-    // await loginButton.click();
-
-    // const title = await page.title();
-    // await page.screenshot({ path: 'loginpage.png' });
-
-    // expect(title).toBe('Logged In Successfully | Practice Test Automation');
-
-    // await browser.close();
-
-
-
-
-
-
-
-
-
-
-
     // const username = page.locator('#username');
     // const password = page.locator('#password');
     // const loginButton = page.locator('#submit');
