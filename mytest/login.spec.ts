@@ -67,9 +67,15 @@
 
 
 
-import { test, expect } from '@playwright/test';
+import { test, expect, chromium, Browser, Page } from '@playwright/test';
 
-test.beforeEach(async ({ page }) => {
+let browser: Browser;
+let page: Page;
+
+test.beforeEach(async () => {
+    browser = await chromium.launch({ headless: false });
+    page = await browser.newPage();
+
     await page.goto('http://127.0.0.1:5500/index.html');
 });
 
