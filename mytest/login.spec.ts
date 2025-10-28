@@ -67,7 +67,7 @@
 
 
 
-import { test, expect, chromium, Browser, Page } from '@playwright/test';
+import { test, expect, chromium, Browser, Page, Locator } from '@playwright/test';
 
 let browser: Browser;
 let page: Page;
@@ -79,7 +79,7 @@ test.beforeEach(async () => {
     await page.goto('http://127.0.0.1:5500/index.html');
 });
 
-test('Logo and header should be visible', async ({ page }) => {
+test('Logo and header should be visible', async () => {
     const logo = page.getByTestId('logo');
     await expect(logo).toBeVisible();
 
@@ -116,3 +116,15 @@ test('User can fill out the signup form', async ({ page }) => {
     await expect(radioPro).toBeChecked();
     await expect(radioFree).not.toBeChecked();
 });
+
+test('check spinner', async ({ page }) => {
+    const spinnerHeading: Locator = page.locator('.block .text-sm font-medium');
+    await expect(spinnerHeading).toContainText('Country');
+
+});
+
+
+
+
+
+// ja heer na tenu maf kia
