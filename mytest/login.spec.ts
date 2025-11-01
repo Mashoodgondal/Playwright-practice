@@ -68,6 +68,16 @@
 
 
 
+//    const radiopro: Locator = page.locator('fieldset.mt-2 .mt-2.flex.gap-4 label:last-child input')
+//     await expect(radiofree).toBeChecked()
+//     await expect(radiopro).not.toBeChecked()
+//     await radiopro.check()
+//     await expect(radiopro).toBeChecked()
+//     await expect(radiofree).not.toBeChecked()
+
+// })
+
+
 
 
 
