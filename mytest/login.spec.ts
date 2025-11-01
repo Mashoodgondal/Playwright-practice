@@ -57,6 +57,14 @@
 // })
 
 
+//    const radiopro: Locator = page.locator('fieldset.mt-2 .mt-2.flex.gap-4 label:last-child input')
+//     await expect(radiofree).toBeChecked()
+//     await expect(radiopro).not.toBeChecked()
+//     await radiopro.check()
+//     await expect(radiopro).toBeChecked()
+//     await expect(radiofree).not.toBeChecked()
+
+// })
 
 
 
@@ -117,14 +125,23 @@ test('User can fill out the signup form', async ({ page }) => {
     await expect(radioFree).not.toBeChecked();
 });
 
-test('check spinner', async ({ page }) => {
-    const spinnerHeading: Locator = page.locator('.block .text-sm font-medium');
-    await expect(spinnerHeading).toContainText('Country');
-
-});
-
-
-
-
-
-// ja heer na tenu maf kia
+test.describe('spinner test', () => {
+    test('spinner appereance', async ({ page }) => {
+        const selectCountry = page.getByTestId('select-country');
+        await expect(selectCountry).toBeVisible()
+        const defaultValue = await selectCountry.inputValue()
+        expect(defaultValue).toBe('')
+    })
+    test('test spinner items', async ({ page }) => {
+        const countryTest = page.getByTestId('select-country');
+        await expect(countryTest).toBeVisible();
+        const optionTexts = await countryTest.locator('option').allTextContents();
+        expect(optionTexts).toEqual([
+            'Select country',
+            'Pakistan',
+            'United States',
+            'India',
+            'United Kingdom'
+        ]);
+    });
+})
