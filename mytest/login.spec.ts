@@ -10,35 +10,6 @@ test('form check', async () => {
 
 })
 
-// test('form test', async () => {
-//     const browser: Browser = await chromium.launch({ headless: false });
-//     const page: Page = await browser.newPage()
-//     await page.goto('http://127.0.0.1:5500/index.html#')
-//     const form: Locator = page.locator('.mt-6.grid.gap-4')
-//     await expect(form).toBeVisible()
-//     const nameInput: Locator = page.locator('input[name="name"]')
-//     await nameInput.fill('ali ahmed')
-//     await expect(nameInput).toHaveValue('ali ahmed')
-//     const emailInput: Locator = page.locator('input[name="email"]')
-//     await emailInput.fill('aliahmad@gmail.com')
-//     await expect(emailInput).toHaveValue('aliahmad@gmail.com')
-//     const passwordInput: Locator = page.locator('input[name="password"]')
-//     await passwordInput.fill('ali321')
-//     await expect(passwordInput).toHaveValue('ali321')
-//     const checkbox: Locator = page.locator('input[type="checkbox"]')
-//     await checkbox.check()
-//     await expect(checkbox).toBeChecked()
-//     const fieldSet: Locator = page.locator('fieldset.mt-2')
-//     await expect(fieldSet).toBeVisible()
-//     const radiofree: Locator = page.locator('fieldset.mt-2 .mt-2.flex.gap-4 label:first-child input')
-//     const radiopro: Locator = page.locator('fieldset.mt-2 .mt-2.flex.gap-4 label:last-child input')
-//     await expect(radiofree).toBeChecked()
-//     await expect(radiopro).not.toBeChecked()
-//     await radiopro.check()
-//     await expect(radiopro).toBeChecked()
-//     await expect(radiofree).not.toBeChecked()
-
-// })
 
 
 
