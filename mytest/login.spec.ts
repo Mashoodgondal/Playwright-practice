@@ -84,29 +84,3 @@ test.describe('spinner test', () => {
     });
 })
 
-
-
-// test('test spinner items', async ({ page }) => {
-//         const countryTest = page.getByTestId('select-country');
-//         await expect(countryTest).toBeVisible();
-//         const optionTexts = await countryTest.locator('option').allTextContents();
-//         expect(optionTexts).toEqual([
-//             'Select country',
-//             'Pakistan',
-//             'United States',
-//             'India',
-//             'United Kingdom'
-//         ]);
-
-
-// test('test spinner items', async ({ page }) => {
-//         const countryTest = page.getByTestId('select-country');
-//         await expect(countryTest).toBeVisible();
-//         const optionTexts = await countryTest.locator('option').allTextContents();
-//         expect(optionTexts).toEqual([
-//             'Select country',
-//             'Pakistan',
-//             'United States',
-//             'India',
-//             'United Kingdom'
-//         ]);
