@@ -12,6 +12,19 @@
 // });
 // import { test, expect, chromium, Browser, Page, Locator } from '@playwright/test';
 
+// let browser: Browser;
+// let page: Page;
+
+// test.beforeEach(async () => {
+//     browser = await chromium.launch({ headless: false });
+//     page = await browser.newPage();
+
+
+//     await page.goto('http://127.0.0.1:5500/index.html');
+// });
+// import { test, expect, chromium, Browser, Page, Locator } from '@playwright/test';
+
+
 
 
 
