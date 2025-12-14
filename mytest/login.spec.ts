@@ -15,6 +15,13 @@
 //     browser = await chromium.launch({ headless: false });
 //     page = await browser.newPage();
 
+// let browser: Browser;
+// let page: Page;
+
+// test.beforeEach(async () => {
+//     browser = await chromium.launch({ headless: false });
+//     page = await browser.newPage();
+
 
 
 
